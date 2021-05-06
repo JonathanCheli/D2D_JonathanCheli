@@ -13,6 +13,8 @@ Fed by a websocket created for the Door2Door backend team, we have the scenario 
 EXTRAS:
 
 4- Visualise on the map the intermediate stops that the vehicle will make between the pickup and dropoff locations. Note that these stops may change over the duration of the journey.
+
+
 5- Visualise the navigation bearing of the vehicle to show which direction the vehicle is currently driving in.
 
 
@@ -55,7 +57,7 @@ As soon as the app fires, the Websocket fetches the data and:
 
   - although i implemented Polylines to show a reference when it comes down drawing a route of our Vehicle, they are not following the steps and legs of the map, due to de Denied    Access to the Api of Origin, i researched a lot about it, and i am going to continue with this, because i found it out many other features which will help in develping more        functionability for this software.
   
-  - Unit etsting
+  - Unit testing
 
   # How to use?
   1- Clone project from GitHub, using Android studio.
