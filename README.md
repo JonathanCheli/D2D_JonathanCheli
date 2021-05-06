@@ -32,7 +32,7 @@ PLUS EXTRAS:
 the organization of these components in separate modules kept the main thread fresh and healthy. Framework MVP again, is the key of the communication of the views and the presenters.
 
 
-# Correctness: Is the task solved? Does the app handle properly all the events sent from the WebSockets enpoint? If there is anything missing, is the reason why it is missing documented?
+# Correctness:
 
 The task was solved in its entirely, due to the clear organization of the task itself, and the natural flow of these type of apps related to transportation
 
