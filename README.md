@@ -17,7 +17,7 @@ PLUS EXTRAS:
 
 
 
-# Technology: Which libraries or approaches are used? Do they make sense for the task? Justify why you've decided to use those technologies to solve the code challenge:
+# Technology:
 
 - In order to keep best practises, clean code, and keeping the logic intact, i implemented a combination of techonologies like:
 - MVP for the presentation of the layers, for keeping the structure of the architecture well organized, and due to the excellent mapping that is achieved between the presenter and   the views.
@@ -33,5 +33,34 @@ the organization of these components in separate modules kept the main thread fr
 
 
 # Correctness: Is the task solved? Does the app handle properly all the events sent from the WebSockets enpoint? If there is anything missing, is the reason why it is missing documented?
+
+The task was solved in its entirely, due to the clear organization of the task itself, and the natural flow of these type of apps related to transportation
+
+As soon as the app fires, the Websocket fetches the data and:
+
+1 -Initialize the vehicle location.
+  -Shows the pickup, drop-off, and some intermediate stops markers.
+
+  -Shows the status on the screen in UI components.
+
+  -Shows the pickup and drop-off addresses on the screen in UI components.
+  
+  2- the vehicle bearing is animated at every new update
+  
+  3- with the new stops added to our roadmap, new updates in our UI components will be shown, and new makers place on the map, which contain titles and more extra info as bonus.
+
+  4- when the vehicle reaches its final destination,the software identifies this action, and clears all the Markers, and some Polylines i added as an extra feature. 
+  
+  # What is missing?
+
+  - although i implemented Polylines to show a reference when it comes down drawing a route of our Vehicle, they are not following the steps and legs of the map, due to de Denied    Access to the Api of Origin, i researched a lot about it, and i am going to continue with this, because i found it out many other features which will help in develping more        functionability for this software.
+  
+  - Unit etsting
+
+  # How to use?
+  1- Clone project from GitHub, using Android studio.
+  2- Go to google_maps_api.xml, check if the API key is still working.
+  3- if it doesnt, please go to https://console.cloud.google.com/apis/dashboard and follow the instructions in the google_maps_api.xm file, about how to generate a new API key.
+  4- once generate it, replace the old one in google_maps_api.xm.
 
 
