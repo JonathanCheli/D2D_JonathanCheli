@@ -10,7 +10,7 @@ Fed by a websocket created for the Door2Door backend team, we have the scenario 
 2- hows the ride's current status (waiting, in the vehicle, dropped off) in a UI component.
 3- shows the ride's pickup and drop-off addresses in a UI component.
 
-PLUS EXTRAS:
+EXTRAS:
 
 4- Visualise on the map the intermediate stops that the vehicle will make between the pickup and dropoff locations. Note that these stops may change over the duration of the journey.
 5- Visualise the navigation bearing of the vehicle to show which direction the vehicle is currently driving in.
