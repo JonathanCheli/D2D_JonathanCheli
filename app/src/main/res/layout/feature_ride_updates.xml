@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription"
+    tools:parentTag="android.widget.RelativeLayout"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dropOffLocationText" />
+
+        <TextView
+            android:id="@+id/greyBackgroundBox"
+            android:layout_width="397dp"
+            android:layout_height="114dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/gradient_color_resource_grey"
+            app:layout_constraintBottom_toBottomOf="@id/space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/pickupLocationText"
+            style="@style/heading"
+            android:layout_width="383dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/four_column"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_rounded_corners_grey"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/one_column"
+            android:paddingStart="@dimen/four_column"
+            android:paddingEnd="@dimen/one_and_a_half_column"
+            android:text="@string/address_from"
+            android:textColor="@color/black"
+
+            app:layout_constraintEnd_toEndOf="@+id/dropOffLocationText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pickupLocationDrawable"
+            android:layout_width="35dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="12dp"
+
+            android:background="@drawable/ic_pickup_location_red"
+            app:layout_constraintBottom_toBottomOf="@id/pickupLocationText"
+            app:layout_constraintStart_toStartOf="@id/pickupLocationText"
+            app:layout_constraintTop_toTopOf="@+id/pickupLocationText"
+            app:layout_constraintVertical_bias="0.526" />
+
+        <TextView
+            android:id="@+id/dropOffLocationText"
+
+            style="@style/heading"
+            android:layout_width="383dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/four_column"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_rounded_corners_grey"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/one_column"
+            android:paddingStart="@dimen/four_column"
+            android:paddingEnd="@dimen/one_and_a_half_column"
+            android:text="@string/address_from"
+
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pickupLocationText" />
+
+        <TextView
+            android:id="@+id/dropOffLocationDrawable"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/ic_dropoff_location_blue"
+
+            app:layout_constraintBottom_toBottomOf="@id/dropOffLocationText"
+            app:layout_constraintStart_toStartOf="@id/dropOffLocationText"
+            app:layout_constraintTop_toTopOf="@+id/dropOffLocationText"
+            app:layout_constraintVertical_bias="0.421" />
+
+        <TextView
+            android:id="@+id/rideStatusText"
+
+            style="@style/text_small_bold"
+
+            android:layout_width="146dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="@dimen/one_and_a_half_column"
+            android:layout_marginTop="@dimen/one_column"
+            android:background="@drawable/rectangle_squared_corners_grey"
+            android:padding="@dimen/one_and_a_half_column"
+            android:text="@string/waiting_for_pickup"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/greyBackgroundBox" />
+
+        <TextView
+            android:id="@+id/bookingIsOpenText"
+
+            style="@style/text_small_bold"
+
+            android:layout_width="146dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/half_column"
+
+            android:background="@drawable/rectangle_rounded_corners_lightblue"
+            android:backgroundTint="@color/colorPrimaryRed"
+
+            android:padding="@dimen/one_and_a_half_column"
+
+            android:text="@string/booking_open"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/rideStatusText"
+            app:layout_constraintEnd_toEndOf="@+id/dropOffLocationText"
+            app:layout_constraintTop_toBottomOf="@id/greyBackgroundBox"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/bookingIsClosedText"
+
+            style="@style/text_small_bold"
+
+            android:layout_width="146dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="4dp"
+
+            android:layout_marginEnd="4dp"
+
+            android:background="@drawable/rectangle_rounded_corners_lightblue"
+
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="@dimen/one_and_a_half_column"
+
+            android:text="@string/booking_closed"
+            app:layout_constraintBottom_toBottomOf="@+id/rideStatusText"
+            app:layout_constraintEnd_toEndOf="@+id/dropOffLocationText"
+            app:layout_constraintTop_toBottomOf="@id/greyBackgroundBox"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/nextStopLocationText"
+
+            style="@style/text_small_bold"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/one_and_a_half_column"
+            android:layout_marginRight="@dimen/one_and_a_half_column"
+            android:layout_marginBottom="@dimen/three_column"
+
+            android:background="@drawable/rectangle_squared_corners_grey"
+
+            android:padding="@dimen/one_and_a_half_column"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
